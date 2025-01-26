@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.nav-link {
+    @apply text-gray-600 hover:text-purple-600 hover:border-purple-600 transition border-b-2 border-transparent font-medium;
+}
+
+.nav-link-selected {
+    @apply text-purple-600 border-b-2 border-purple-600 font-medium;
+}
+
+.td-border {
+    @apply border border-gray-300 px-4 py-2;
+}
+
+
+@keyframes blink-updated {
+    0% { background-color: transparent; }
+    50% { background-color: #8b5cf6; }  /* Purple color */
+    100% { background-color: transparent; }
+}
+
+.blinkUpdated {
+    animation: blink-updated 0.8s ease-in-out;
+}
+
